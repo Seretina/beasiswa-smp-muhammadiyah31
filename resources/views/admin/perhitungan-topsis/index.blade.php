@@ -23,14 +23,6 @@
                             quae repudiandae asperiores aperiam quaerat pariatur omnis, distinctio impedit doloribus qui
                             enim? Saepe dolore illo nisi vel.
                         </p>
-                        <p style='margin: 0; padding: 0'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio dicta veritatis minus
-                            quae repudiandae asperiores aperiam quaerat pariatur omnis, distinctio impedit doloribus qui
-                            enim? Saepe dolore illo nisi vel.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio dicta veritatis minus
-                            quae repudiandae asperiores aperiam quaerat pariatur omnis, distinctio impedit doloribus qui
-                            enim? Saepe dolore illo nisi vel.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -103,8 +95,8 @@
                                                         <thead>
                                                             <tr>
                                                                 <th style="width: 3%">No</th>
-                                                                <th style="width: 10%">Nomor Induk Karyawan</th>
-                                                                <th style="width: 10%">Nama Karyawan</th>
+                                                                <th style="width: 10%">Nomor Induk Siswa Nasional</th>
+                                                                <th style="width: 10%">Nama Siswa</th>
                                                                 @foreach ($kriterias as $kriteria)
                                                                 <th style="width: 10%">{{$kriteria->name}}</th>
                                                                 @endforeach
@@ -180,8 +172,8 @@
                                                         <thead>
                                                             <tr>
                                                                 <th style="width: 3%">No</th>
-                                                                <th style="width: 10%">Nomor Induk Karyawan</th>
-                                                                <th style="width: 10%">Nama Karyawan</th>
+                                                                <th style="width: 10%">Nomor Induk Siswa Nasional</th>
+                                                                <th style="width: 10%">Nama Siswa</th>
                                                                 @foreach ($kriterias as $kriteria)
                                                                 <th style="width: 10%">{{$kriteria->name}}</th>
                                                                 @endforeach
@@ -257,8 +249,8 @@
                                                         <thead>
                                                             <tr>
                                                                 <th style="width: 3%">No</th>
-                                                                <th style="width: 10%">Nomor Induk Karyawan</th>
-                                                                <th style="width: 10%">Nama Karyawan</th>
+                                                                <th style="width: 10%">Nomor Induk Siswa Nasional</th>
+                                                                <th style="width: 10%">Nama Siswa</th>
                                                                 <th style="width: 10%">jarak Ideal Positif (+)</th>
                                                                 <th style="width: 10%">jarak Ideal Negatif (-)</th>
                                                             </tr>
@@ -334,8 +326,8 @@
                                                     <thead>
                                                         <tr>
                                                             <th style="width: 3%">No</th>
-                                                            <th style="width: 10%">Nomor Induk Karyawan</th>
-                                                            <th style="width: 10%">Nama Karyawan</th>
+                                                            <th style="width: 10%">Nomor Induk Siswa Nasional</th>
+                                                            <th style="width: 10%">Nama Siswa</th>
                                                             <th style="width: 10%">Hasil Preferensi </th>
                                                         </tr>
                                                     </thead>
