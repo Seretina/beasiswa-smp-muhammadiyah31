@@ -47,6 +47,7 @@ class KaryawanController extends Controller
 
         $karyawans->nisn = $request->nisn;
         $karyawans->name = $request->name;
+        $karyawans->class = $request->class;
         $karyawans->gender = $request->gender;
         $karyawans->pob = $request->pob;
         $karyawans->dob = $request->dob;
@@ -103,6 +104,7 @@ class KaryawanController extends Controller
         $karyawans = Karyawan::find($id);
         // $karyawans->nisn = $request->nisn;
         $karyawans->name = $request->name;
+        $karyawans->class = $request->class;
         $karyawans->gender = $request->gender;
         $karyawans->pob = $request->pob;
         $karyawans->dob = $request->dob;
@@ -133,6 +135,6 @@ class KaryawanController extends Controller
 
         return redirect()
             ->route('admin.karyawan.index')
-            ->with('success_message', 'Successfully Delete Karyawan! ');
+            ->with('success_message', 'Successfully Delete Siswa! ');
     }
 }

@@ -43,7 +43,7 @@ class PenilaianController extends Controller
 
         $penilaians = Penilaian::orderBy('id', 'asc')->paginate(10);
         $karyawans =
-            DB::select('SELECT DISTINCT karyawans.id, karyawans.nik, karyawans.name FROM penilaians JOIN karyawans ON penilaians.karyawan_id = karyawans.id');
+            DB::select('SELECT DISTINCT karyawans.id, karyawans.nisn, karyawans.name FROM penilaians JOIN karyawans ON penilaians.karyawan_id = karyawans.id');
         $kriterias = Kriteria::all();
         $karyawan1 = Karyawan::all();
 
@@ -83,8 +83,59 @@ class PenilaianController extends Controller
                 $penilaians->karyawan_id = $request->karyawan_id;
                 $penilaians->kriteria_id = $request->kriteria_id;
 
-                // kriteria 1 = kehadiran
+                // kriteria 1 = Pehasilan orang tua
                 if ($request->kriteria_id == 1) {
+                    if ($request->nilai < 799999) {
+                        $inisialisasi = 5;
+                    } elseif ($request->nilai >= 800000 && $request->nilai <= 1499999) {
+                        $inisialisasi = 4;
+                    } elseif ($request->nilai >= 1500000 && $request->nilai <= 2999999) {
+                        $inisialisasi = 3;
+                    } elseif ($request->nilai >= 3000000 && $request->nilai <= 4999999) {
+                        $inisialisasi = 2;
+                    } elseif ($request->nilai > 5000000 ) {
+                        $inisialisasi = 1;
+                    }else{
+                         return redirect()
+                                ->route('admin.penilaian.create')
+                                ->with('error_message', 'Input data melebihi parameter!');
+                    }
+                    // kriteria 2 = tanggungan orang tua
+                } else if ($request->kriteria_id == 2) {
+                    if ($request->nilai >= 5) {
+                        $inisialisasi = 5;
+                    } elseif ($request->nilai >= 4 && $request->nilai <= 4) {
+                        $inisialisasi = 4;
+                    } elseif ($request->nilai >= 2 && $request->nilai <= 3) {
+                        $inisialisasi = 3;
+                    } elseif ($request->nilai >= 1 && $request->nilai <= 2) {
+                        $inisialisasi = 2;
+                    } elseif ($request->nilai <= 1) {
+                        $inisialisasi = 1;
+                    }else{
+                         return redirect()
+                                ->route('admin.penilaian.create')
+                                ->with('error_message', 'Input data melebihi parameter!');
+                    }
+                    // kriteria 3 = kepemilikan kendaraan
+                } else if ($request->kriteria_id == 3) {
+                    if ($request->nilai == "tidak ada") {
+                        $inisialisasi = 5;
+                    } elseif ($request->nilai == "sepeda") {
+                        $inisialisasi = 4;
+                    } elseif ($request->nilai == "motor") {
+                        $inisialisasi = 3;
+                    } elseif ($request->nilai == "mobil") {
+                        $inisialisasi = 2;
+                    } elseif ($request->nilai =="mobil dan motor") {
+                        $inisialisasi = 1;
+                    }else{
+                         return redirect()
+                                ->route('admin.penilaian.create')
+                                ->with('error_message', 'Input parameter salah!');
+                    }
+                    // kriteria 4 = kehadiran
+                } else if ($request->kriteria_id == 4) {
                     if ($request->nilai >= 81 && $request->nilai <= 100) {
                         $inisialisasi = 5;
                     } elseif ($request->nilai >= 61 && $request->nilai <= 80) {
@@ -95,61 +146,13 @@ class PenilaianController extends Controller
                         $inisialisasi = 2;
                     } elseif ($request->nilai >= 1 && $request->nilai <= 20) {
                         $inisialisasi = 1;
-                    }
-                    // kriteria 2 = disiplin
-                } else if ($request->kriteria_id == 2) {
-                    if ($request->nilai >= 24 && $request->nilai <= 30) {
-                        $inisialisasi = 5;
-                    } elseif ($request->nilai >= 19 && $request->nilai <= 23) {
-                        $inisialisasi = 4;
-                    } elseif ($request->nilai >= 13 && $request->nilai <= 18) {
-                        $inisialisasi = 3;
-                    } elseif ($request->nilai >= 7 && $request->nilai <= 12) {
-                        $inisialisasi = 2;
-                    } elseif ($request->nilai >= 1 && $request->nilai <= 6) {
-                        $inisialisasi = 1;
-                    }
-                    // kriteria 3 = kerjasama
-                } else if ($request->kriteria_id == 3) {
-                    if ($request->nilai >= 17 && $request->nilai <= 20) {
-                        $inisialisasi = 5;
-                    } elseif ($request->nilai >= 13 && $request->nilai <= 16) {
-                        $inisialisasi = 4;
-                    } elseif ($request->nilai >= 9 && $request->nilai <= 12) {
-                        $inisialisasi = 3;
-                    } elseif ($request->nilai >= 5 && $request->nilai <= 8) {
-                        $inisialisasi = 2;
-                    } elseif ($request->nilai >= 1 && $request->nilai <= 4) {
-                        $inisialisasi = 1;
-                    }
-                    // kriteria 4 = kreativitas
-                } else if ($request->kriteria_id == 4) {
-                    if ($request->nilai >= 9  && $request->nilai <= 10) {
-                        $inisialisasi = 5;
-                    } elseif ($request->nilai >= 7 && $request->nilai <= 8) {
-                        $inisialisasi = 4;
-                    } elseif ($request->nilai >= 5 && $request->nilai <= 6) {
-                        $inisialisasi = 3;
-                    } elseif ($request->nilai >= 3 && $request->nilai <= 4) {
-                        $inisialisasi = 2;
-                    } elseif ($request->nilai >= 1 && $request->nilai <= 2) {
-                        $inisialisasi = 1;
-                    }
-                    // kriteria 5 = Sikap
-                } else if ($request->kriteria_id == 5) {
-                    if ($request->nilai >= 24 && $request->nilai <= 30) {
-                        $inisialisasi = 5;
-                    } elseif ($request->nilai >= 19 && $request->nilai <= 23) {
-                        $inisialisasi = 4;
-                    } elseif ($request->nilai >= 13 && $request->nilai <= 18) {
-                        $inisialisasi = 3;
-                    } elseif ($request->nilai >= 7 && $request->nilai <= 12) {
-                        $inisialisasi = 2;
-                    } elseif ($request->nilai >= 1 && $request->nilai <= 6) {
-                        $inisialisasi = 1;
+                    }else{
+                         return redirect()
+                                ->route('admin.penilaian.create')
+                                ->with('error_message', 'Input data melebihi parameter!');
                     }
                 }
-                $penilaians->nilai_inisial = $inisialisasi;
+                $penilaians->nilai_inisial = (int)$inisialisasi;
 
                 $penilaians->save();
                 // dd($penilaians);
@@ -157,7 +160,7 @@ class PenilaianController extends Controller
 
             return redirect()
                 ->route('admin.penilaian.create')
-                ->with('success_message', 'Successfully Created Nilai Karyawan ! ');
+                ->with('success_message', 'Successfully Created Nilai Siswa ! ');
         } else {
 
             return redirect()

@@ -15,7 +15,8 @@ class KaryawanTableSeeder extends Seeder
         $karyawans = [
             [
                 'nisn' => '0109083731',
-                'name' => 'Areta Fredelin Suryapati 1',
+                'name' => 'Didik Ilham Kurniawan',
+                'class' => 'Kelas 8 A',
                 'gender' => 'Laki - Laki',
                 'pob' => 'Jakarta',
                 'dob' => '2010-04-03',
@@ -25,7 +26,8 @@ class KaryawanTableSeeder extends Seeder
             ],
             [
                 'nisn' => '0109083732',
-                'name' => 'Areta Fredelin Suryapati 2',
+                'name' => 'Lili Irlandia',
+                'class' => 'Kelas 8 A',
                 'gender' => 'Laki - Laki',
                 'pob' => 'Jakarta',
                 'dob' => '2010-04-03',
@@ -35,7 +37,8 @@ class KaryawanTableSeeder extends Seeder
             ],
             [
                 'nisn' => '0109083733',
-                'name' => 'Areta Fredelin Suryapati 3',
+                'name' => 'Kafi A Mal Falah',
+                'class' => 'Kelas 8 A',
                 'gender' => 'Laki - Laki',
                 'pob' => 'Jakarta',
                 'dob' => '2010-04-03',
@@ -45,7 +48,8 @@ class KaryawanTableSeeder extends Seeder
             ],
             [
                 'nisn' => '0109083734',
-                'name' => 'Areta Fredelin Suryapati 4',
+                'name' => 'Khayra Zahra Aulia',
+                'class' => 'Kelas 8 A',
                 'gender' => 'Laki - Laki',
                 'pob' => 'Jakarta',
                 'dob' => '2010-04-03',
@@ -55,7 +59,8 @@ class KaryawanTableSeeder extends Seeder
             ],
             [
                 'nisn' => '0109083735',
-                'name' => 'Areta Fredelin Suryapati 5',
+                'name' => 'Ummu Syahidah',
+                'class' => 'Kelas 8 A',
                 'gender' => 'Laki - Laki',
                 'pob' => 'Jakarta',
                 'dob' => '2010-04-03',

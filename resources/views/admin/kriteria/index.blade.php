@@ -9,7 +9,6 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <div class="card card-block">
 
                     <div class="card-title-block">
                         <h3 class="title">Kriteria</h3>
@@ -18,7 +17,6 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="card card-block">
-
                                 <!-- Message Status -->
                                 @if(Session::has('success_message'))
                                 <div class="alert alert-success" role="alert">
@@ -32,13 +30,13 @@
                                 </div>
                                 @endif
                                 <!--End Message Status -->
-
                                <div class="card-header">
-                                    <h3 class="card-title"><a class="btn btn-primary btn-md"
-                                            href={{ route('admin.kriteria.create') }}>
+                                    <h3 class="card-title">
+                                        <a class="btn btn-primary btn-md" href={{ route('admin.kriteria.create') }}>
                                             <i class="fa fa-plus" style="margin-right: 10px"></i>
                                             Tambah Data
-                                        </a></h3>
+                                        </a>
+                                    </h3>
                                 </div>
                                 <section>
                                     <div class="table-responsive">
@@ -98,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
         </div>
     </div>
 </main>

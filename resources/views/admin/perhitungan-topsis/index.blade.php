@@ -14,22 +14,23 @@
                     <div class="card-title-block">
                         <h3 class="title">TOPSIS ( Penjelasan )</h3>
                     </div>
-                    <div class="alert alert-primary">
+                    <div class="card-body">
                         <p style='margin: 0; padding: 0'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio dicta veritatis minus
-                            quae repudiandae asperiores aperiam quaerat pariatur omnis, distinctio impedit doloribus qui
-                            enim? Saepe dolore illo nisi vel.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio dicta veritatis minus
-                            quae repudiandae asperiores aperiam quaerat pariatur omnis, distinctio impedit doloribus qui
-                            enim? Saepe dolore illo nisi vel.
+                          Dalam metode TOPSIS, dipertimbangkan adanya solusi ideal positif dan solusi ideal negatif.
+                          Solusi ideal positif merupakan nilai terbaik dari semua kriteria sedangkan solusi ideal negatif
+                          adalah nilai terburuk untuk tiap kriteria dari alternatif yang ada. Dengan adanya kedua solusi ini
+                          maka alternatif yang dipilih dalam metode TOPSIS merupakan alternatif yang memiliki jarak terdekat dengan
+                          solusi ideal positif dan jarak terjauh dengan solusi ideal negatif. Karena itulah maka dapat disimpulkan beberapa
+                          kelemahan dan kelebihan metode TOPSIS
                         </p>
                         <p style='margin: 0; padding: 0'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio dicta veritatis minus
-                            quae repudiandae asperiores aperiam quaerat pariatur omnis, distinctio impedit doloribus qui
-                            enim? Saepe dolore illo nisi vel.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio dicta veritatis minus
-                            quae repudiandae asperiores aperiam quaerat pariatur omnis, distinctio impedit doloribus qui
-                            enim? Saepe dolore illo nisi vel.
+                        <br>
+                           Kelebihan metode TOPSIS: <br>
+                           1. Konsepnya sederhana dan mudah dipahami, kesederhanaan ini dilihat dari alur proses metode TOPSIS yang tidak begitu rumit.
+                           Karena menggunakan indikator kriteria dan variabel alternatif sebagai pembantu untuk menentukan keputusan <br>
+                           2. Komputasinya efisien, perhitungan komputasinya lebih efisien dan dan cepat <br>
+                           3. Mampu dijadikan sebagai pengukur kinerja alternatif dan juga alternatif keputusan dalam sebuah bentuk output komputasi yang sederhana. <br>
+                           4. Dapat digunakan sebagai metode pengambilan keputusan yang lebih cepat. <br>
                         </p>
                     </div>
                 </div>

@@ -5,255 +5,123 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item">Home</li>
         <li class="breadcrumb-item">Penilaian</li>
-        <li class="breadcrumb-item active">Input Nilai Karyawan</li>
+        <li class="breadcrumb-item active">Input Nilai Siswa</li>
     </ol>
     <div class="container-fluid">
         <div class="row align-content-center">
-            <div class="alert alert-primary ">
-                <p style='margin: 0; padding: 0'>
-                    sebelum dilakukan penilaian, nilai yang didapat diinisial terlebih dahulu.
-                    <p>setiap nilai kriteria diinisialkan dapat diliahat sebagai berikut : </p>
-                    <p>
-                        <div class="table-responsive">
-                            <table class="table table-bordered" style="text-align: center">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 3px">
-                                            Kriteria
-                                        </th>
-                                        <th style="width: 3px">
-                                            Nilai
-                                        </th>
-                                        <th style="width: 3px">
-                                            Nilai Inisialisasi
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            Kehadiran
-                                        </td>
-                                        <td>
-                                            <p>
-                                                81 - 100
-                                            </p>
-                                            <p>
-                                                61 - 80
-                                            </p>
-                                            <p>
-                                                41 - 60
-                                            </p>
-                                            <p>
-                                                21 - 40
-                                            </p>
-                                            1 - 20
-                                        </td>
-                                        <td>
-                                            <p>
-                                                5
-                                            </p>
-                                            <p>
-                                                4
-                                            </p>
-                                            <p>
-                                                3
-                                            </p>
-                                            <p>
-                                                2
-                                            </p>
-                                            1
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            Kedisiplinan
-                                        </td>
-                                        <td>
-                                            <p>
-                                                24 - 30
-                                            </p>
-                                            <p>
-                                                19 - 23
-                                            </p>
-                                            <p>
-                                                13 - 18
-                                            </p>
-                                            <p>
-                                                7 - 12
-                                            </p>
-                                            1 - 6
-                                        </td>
-                                        <td>
-                                            <p>
-                                                5
-                                            </p>
-                                            <p>
-                                                4
-                                            </p>
-                                            <p>
-                                                3
-                                            </p>
-                                            <p>
-                                                2
-                                            </p>
-                                            1
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            Kerjasama
-                                        </td>
-                                        <td>
-                                            <p>
-                                                17 - 20
-                                            </p>
-                                            <p>
-                                                13 - 16
-                                            </p>
-                                            <p>
-                                                9 - 12
-                                            </p>
-                                            <p>
-                                                5 - 8
-                                            </p>
-                                            1 - 4
-                                        </td>
-                                        <td>
-                                            <p>
-                                                5
-                                            </p>
-                                            <p>
-                                                4
-                                            </p>
-                                            <p>
-                                                3
-                                            </p>
-                                            <p>
-                                                2
-                                            </p>
-                                            1
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </p>
-                </p>
+            <div class="col-sm-12">
+                <div class="card card-block">
+                    <div class="">
+                        <p style='margin: 0; padding: 0'>
+                            sebelum dilakukan penilaian, nilai yang didapat diinisial terlebih dahulu.
+                            <p>setiap nilai kriteria diinisialkan dapat diliahat sebagai berikut : </p>
+                            <p>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" style="text-align: center">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 3px">
+                                                    Kriteria
+                                                </th>
+                                                <th style="width: 3px">
+                                                    Nilai
+                                                </th>
+                                                <th style="width: 3px">
+                                                    Nilai Inisialisasi
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    PENGHASILAN ORANG TUA
+                                                </td>
+                                                <td>
+                                                    <p>Lebih dari Rp 5.000.000</p>
+                                                    <p>Rp. 3.000.000 - Rp 4.999.999</p>
+                                                    <p>Rp 1.500.000- Rp 2.999.999</p>
+                                                    <p>Rp 800.000 - Rp 1.499.999</p>
+                                                    Kurang Dari Rp 800.000
+                                                </td>
+                                                <td>
+                                                    <p>5</p>
+                                                    <p>4</p>
+                                                    <p>3</p>
+                                                    <p>2</p>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <br><br><br>
+                                                    TANGGUNGAN ORANG TUA
+                                                </td>
+                                                <td>
+                                                    <p>Lebih dari 5 Anak</p>
+                                                    <p>4 Anak</p>
+                                                    <p>3 Anak</p>
+                                                    <p>2 Anak</p>
+                                                    1 Anak
+                                                </td>
+                                                <td>
+                                                    <p>5</p>
+                                                    <p>4</p>
+                                                    <p>3</p>
+                                                    <p>2</p>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <br><br><br>
+                                                    KEPEMILIKAN KENDARAAN
+                                                </td>
+                                                <td>
+                                                    <p>Tidak Ada</p>
+                                                    <p>Sepeda</p>
+                                                    <p>Sepeda Motor</p>
+                                                    <p>Mobil</p>
+                                                    Mobil & Sepeda Motor
+                                                </td>
+                                                <td>
+                                                    <p>5</p>
+                                                    <p>4</p>
+                                                    <p>3</p>
+                                                    <p>2</p>
+                                                    1
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <br><br><br>
+                                                    KEHADIRAN
+                                                </td>
+                                                <td>
+                                                    <p>80  - 100</p>
+                                                    <p>60 - 79</p>
+                                                    <p>40 - 59</p>
+                                                    <p>20 - 39</p>
+                                                    1 - 19
+                                                </td>
+                                                <td>
+                                                    <p>5</p>
+                                                    <p>4</p>
+                                                    <p>3</p>
+                                                    <p>2</p>
+                                                    1
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </p>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="alert alert-primary">
-                <p style='margin: 0; padding: 0'>
-                    sebelum dilakukan penilaian, nilai yang didapat diinisial terlebih dahulu.
-                    <p>setiap nilai kriteria diinisialkan dapat diliahat sebagai berikut : </p>
-                    <p>
-                        <div class="table-responsive">
-                            <table class="table table-bordered" style="text-align: center">
-                                <thead>
-                                    <tr>
-                                        <th style="width: 3px">
-                                            Kriteria
-                                        </th>
-                                        <th style="width: 3px">
-                                            Nilai
-                                        </th>
-                                        <th style="width: 3px">
-                                            Nilai Inisialisasi
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            Kreativitas
-                                        </td>
-                                        <td>
-                                            <p>
-                                                9 - 10
-                                            </p>
-                                            <p>
-                                                7 - 8
-                                            </p>
-                                            <p>
-                                                5 - 6
-                                            </p>
-                                            <p>
-                                                3 - 4
-                                            </p>
-                                            1 - 2
-                                        </td>
-                                        <td>
-                                            <p>
-                                                5
-                                            </p>
-                                            <p>
-                                                4
-                                            </p>
-                                            <p>
-                                                3
-                                            </p>
-                                            <p>
-                                                2
-                                            </p>
-                                            1
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            Sikap
-                                        </td>
-                                        <td>
-                                            <p>
-                                                24 - 30
-                                            </p>
-                                            <p>
-                                                19 - 23
-                                            </p>
-                                            <p>
-                                                13 - 18
-                                            </p>
-                                            <p>
-                                                7 - 12
-                                            </p>
-                                            1 - 6
-                                        </td>
-                                        <td>
-                                            <p>
-                                                5
-                                            </p>
-                                            <p>
-                                                4
-                                            </p>
-                                            <p>
-                                                3
-                                            </p>
-                                            <p>
-                                                2
-                                            </p>
-                                            1
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </p>
-                </p>
-            </div>
-
             <div class="col-sm-12">
                 <div class="card card-block">
 
@@ -276,12 +144,12 @@
                         <div class="card-body">
 
                             <div class="form-group">
-                                <label for="karyawan_id">Nama Karyawan</sup></label>
+                                <label for="karyawan_id">Nama Siswa</sup></label>
                                 <select name="karyawan_id" id="karyawan_id"
                                     class="form-control @if ($errors->has('karyawan_id')) is-invalid @endif">
-                                    <option value="">Select a karyawan</option>
+                                    <option value="">Select a Siswa</option>
                                     @foreach($karyawan1 as $karyawan)
-                                    <option value="{{ $karyawan->id }}"><b>{{$karyawan->nik." : ".$karyawan->name}}</b>
+                                    <option value="{{ $karyawan->id }}"><b>{{$karyawan->nisn." : ".$karyawan->name}}</b>
                                     </option>
                                     @endforeach
                                 </select>
@@ -310,8 +178,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="nilai">Nilai Karyawan </label>
-                                <input type="text" placeholder="Enter Nilai Karyawan" name="nilai" id="inputName"
+                                <label for="nilai">Nilai Siswa </label>
+                                <input type="text" placeholder="Enter Nilai Siswa" name="nilai" id="inputName"
                                     class="form-control @if ($errors->has('nilai')) is-invalid @endif"
                                     value="{{ old('nilai') }}">
                                 @error('nilai')
@@ -344,16 +212,16 @@
                             <!--End Message Status -->
 
                             <div class="card-title-block">
-                                <h3 class="title">Showing Nilai Karyawan</h3>
+                                <h3 class="title">Showing Nilai Siswa</h3>
                             </div>
                             <section>
                                 <div class="table-responsive">
-                                    <table class="table table-striped table-bordered" style="text-align: center">
+                                    <table id="createDataSiswa" class="table table-striped table-bordered" style="width:100%; text-align: center">
                                         <thead>
                                             <tr>
                                                 <th style="width: 3%">No</th>
-                                                <th style="width: 10%">Nomor Induk Karyawan</th>
-                                                <th style="width: 10%">Nama Karyawan</th>
+                                                <th style="width: 10%">Nomor Induk Siswa Nasional   </th>
+                                                <th style="width: 10%">Nama Siswa</th>
 
                                                 @foreach ($kriterias as $kriteria)
                                                 <th style="width: 10%">{{$kriteria->name}}</th>
@@ -370,7 +238,7 @@
                                                     {{$no++}}
                                                 </td>
                                                 <td>
-                                                    {{$karyawan->nik}}
+                                                    {{$karyawan->nisn}}
                                                 </td>
                                                 <td>
                                                     {{$karyawan->name}}
@@ -385,8 +253,10 @@
                                             @endforeach
                                         </tbody>
                                     </table>
+                                    <br>
                                     <a class="btn btn-primary float-right btn-lg"
                                         href="{{ route('admin.penilaian.index') }}">DONE</a>
+
                                 </div>
                             </section>
                         </div>
@@ -396,4 +266,8 @@
         </div>
     </div>
 </main>
+@endsection
+
+@section('js')
+<script>new DataTable('#createDataSiswa');</script>
 @endsection

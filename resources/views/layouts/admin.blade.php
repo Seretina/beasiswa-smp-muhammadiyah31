@@ -16,8 +16,11 @@
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendors/pace-progress/css/pace.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/table.scss') }}" rel="stylesheet">
-    {{-- <link rel="stylesheet" href="{{ asset('modular_admin/css/vendor.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}?version=1.0.2">
+     {{-- data table --}}
+    {{-- <link href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet"> --}}
+
 </head>
 
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
@@ -51,6 +54,10 @@
     <script src="{{ asset('assets/js/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('assets/js/coreui.min.js') }}"></script>
     <script src="{{ asset('assets/js/custom-tooltips.min.js') }}"></script>
+    {{-- data table --}}
+    {{-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap4.min.js"></script> --}}
 
     @yield('js')
 
