@@ -13,22 +13,10 @@ class KriteriaTableSeeder extends Seeder
     public function run()
     {
         $kriterias = [
-            [
-                'name' => 'Pendapatan Orang Tua',
-                'weight' => 40,
-            ],
-            [
-                'name' => 'Tanggungan Orang Tua',
-                'weight' => 30,
-            ],
-            [
-                'name' => 'Kepemilikan Kendaraan',
-                'weight' => 20,
-            ],
-            [
-                'name' => 'Kehadiran',
-                'weight' => 10,
-            ],
+            ['name' => 'Pendapatan Orang Tua', 'weight' => 40],
+            ['name' => 'Tanggungan Orang Tua', 'weight' => 30],
+            ['name' => 'Kepemilikan Kendaraan', 'weight' => 20],
+            ['name' => 'Kehadiran', 'weight' => 10],
         ];
 
         foreach ($kriterias as $kriteria) {

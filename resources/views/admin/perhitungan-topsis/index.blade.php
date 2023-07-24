@@ -23,6 +23,15 @@
                             quae repudiandae asperiores aperiam quaerat pariatur omnis, distinctio impedit doloribus qui
                             enim? Saepe dolore illo nisi vel.
                         </p>
+                        <p style='margin: 0; padding: 0'>
+                        <br>
+                           Kelebihan metode TOPSIS: <br>
+                           1. Konsepnya sederhana dan mudah dipahami, kesederhanaan ini dilihat dari alur proses metode TOPSIS yang tidak begitu rumit.
+                           Karena menggunakan indikator kriteria dan variabel alternatif sebagai pembantu untuk menentukan keputusan <br>
+                           2. Komputasinya efisien, perhitungan komputasinya lebih efisien dan dan cepat <br>
+                           3. Mampu dijadikan sebagai pengukur kinerja alternatif dan juga alternatif keputusan dalam sebuah bentuk output komputasi yang sederhana. <br>
+                           4. Dapat digunakan sebagai metode pengambilan keputusan yang lebih cepat. <br>
+                        </p>
                     </div>
                 </div>
             </div>

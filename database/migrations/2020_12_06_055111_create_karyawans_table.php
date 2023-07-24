@@ -17,6 +17,7 @@ class CreateKaryawansTable extends Migration
             $table->id();
             $table->string('nisn')->nullable();
             $table->string('name', 50)->nullable();
+            $table->string('class', 50)->nullable();
             $table->string('gender', 15)->nullable();
             $table->string('pob')->nullable();
             $table->date('dob')->nullable();

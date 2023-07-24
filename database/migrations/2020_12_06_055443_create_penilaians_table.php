@@ -15,7 +15,7 @@ class CreatePenilaiansTable extends Migration
     {
         Schema::create('penilaians', function (Blueprint $table) {
             $table->id();
-            $table->double('nilai');
+            $table->string('nilai');
             $table->double('nilai_inisial')->nullable();
 
             $table->unsignedBigInteger('karyawan_id');

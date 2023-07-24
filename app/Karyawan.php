@@ -13,6 +13,7 @@ class Karyawan extends Model
     protected $fillable = [
         'nisn',
         'name',
+        'class',
         'gender',
         'pob',
         'dob',
